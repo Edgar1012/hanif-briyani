@@ -2,125 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hanif Briyani</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hanif Briyani Catering</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Poppins', sans-serif; color: #222; background-color: #fff; }
-    
-    header {
-      position: relative;
-      height: 100vh;
-      width: 100%;
-      overflow: hidden;
+    body { font-family: 'Poppins', sans-serif; }
+    .hero {
+      background: url('https://raw.githubusercontent.com/Edgar1012/hanif-briyani/main/bg.jpg') center/cover no-repeat;
+      height: 100vh; position: relative;
     }
-
-    header img.bg {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 1;
+    .hero-overlay {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
     }
-
-    .navbar {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background: rgba(0, 0, 0, 0.5);
+    .hero-content {
+      position: relative; z-index: 2; color: white; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; text-align: center;
     }
-
-    .navbar img {
-      height: 50px;
+    .services-icon {
+      font-size: 48px; color: #dc3545;
     }
-
-    .nav-links {
-      display: flex;
-      gap: 20px;
+    footer { background: #343a40; color: #fff; padding: 20px 0; }
+    .btn-whatsapp {
+      background-color: #25D366; border: none;
     }
-
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #8b0000;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    footer {
-      background: #8b0000;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        flex-direction: column;
-        gap: 10px;
-      }
+    .btn-whatsapp:hover {
+      background-color: #1ebe5d;
     }
   </style>
 </head>
 <body>
 
-  <header id="home">
-    <img src="https://raw.githubusercontent.com/Edgar1012/hanif-briyani/main/hb.png" class="bg" alt="Background Image" />
-    
-    <nav class="navbar">
-      <img src="https://raw.githubusercontent.com/Edgar1012/hanif-briyani/main/hblogo.png" alt="Hanif Briyani Logo">
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact Us</a>
-      </div>
-    </nav>
-  </header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="https://raw.githubusercontent.com/Edgar1012/hanif-briyani/main/hb.png" height="50"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Welcome to Hanif Briyani — where tradition meets taste. Our biryani is a celebration of spices, love, and heritage. Using authentic recipes and the finest ingredients, we serve soul-satisfying meals to our beloved customers in Nagercoil and beyond.</p>
-  </section>
+<header class="hero" id="home">
+  <div class="hero-overlay"></div>
+</header>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Chicken Briyani</li>
-      <li>Mutton Briyani</li>
-      <li>Family Pack Briyani</li>
-      <li>Home Delivery</li>
-      <li>Party Orders & Catering</li>
-    </ul>
-  </section>
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center text-danger mb-4">About Us</h2>
+    <p class="lead text-center">Hanif Briyani is your go‑to catering partner for events—weddings, birthdays, corporate—offering non‑veg specialties, especially biryani and snacks. We deliver quality food with love and tradition.</p>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>📞 WhatsApp or Call: <a href="https://wa.me/98982922992" target="_blank">98982922992</a></p>
-    <p>📍 Nagercoil, Tamil Nadu</p>
-  </section>
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center text-danger mb-4">Our Services & Menu</h2>
+    <div class="row text-center gy-4">
+      <div class="col-md-4"><i class="services-icon bi bi-basket"></i><h5>Briyani Platters</h5><p>Chicken, Mutton, Family Packs</p></div>
+      <div class="col-md-4"><i class="services-icon bi bi-box-seam"></i><h5>Event Catering</h5><p>Weddings, Birthdays & Corporate Events</p></div>
+      <div class="col-md-4"><i class="services-icon bi bi-shop"></i><h5>Snacks & Cakes</h5><p>Momos, Fries, Juice & Cakes</p></div>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Hanif Briyani. All rights reserved.</p>
-  </footer>
+<section id="order" class="py-5">
+  <div class="container text-center">
+    <h2 class="text-center text-danger mb-4">Order Now</h2>
+    <a href="https://wa.me/98982922992" class="btn btn-whatsapp btn-lg text-white">
+      <i class="bi bi-whatsapp me-2"></i>Order via WhatsApp
+    </a>
+  </div>
+</section>
 
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center text-danger mb-4">Contact Us</h2>
+    <p class="text-center"><i class="bi bi-whatsapp text-success me-1"></i> <a href="https://wa.me/98982922992">98982922992</a></p>
+    <p class="text-center">📍 Serving Nagercoil, Tamil Nadu & Nearby Regions</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container text-center">
+    <p>&copy; 2025 Hanif Briyani Catering. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
