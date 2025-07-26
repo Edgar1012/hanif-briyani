@@ -8,49 +8,71 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Poppins', sans-serif; color: #222; background-color: #fff; }
+    
     header {
-      background: url('https://raw.githubusercontent.com/Edgar1012/hanif-briyani/main/bg.jpg') no-repeat center center/cover;
+      position: relative;
       height: 100vh;
+      width: 100%;
+      overflow: hidden;
     }
+
+    header img.bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
     .navbar {
+      position: relative;
+      z-index: 2;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
       background: rgba(0, 0, 0, 0.5);
     }
+
     .navbar img {
       height: 50px;
     }
+
     .nav-links {
       display: flex;
       gap: 20px;
     }
+
     .nav-links a {
       color: white;
       text-decoration: none;
       font-weight: 600;
     }
+
     section {
       padding: 60px 20px;
       max-width: 900px;
       margin: auto;
     }
+
     h2 {
       color: #8b0000;
       margin-bottom: 20px;
       border-bottom: 2px solid #eee;
       padding-bottom: 10px;
     }
+
     ul {
       padding-left: 20px;
     }
+
     footer {
       background: #8b0000;
       color: #fff;
       text-align: center;
       padding: 20px;
     }
+
     @media (max-width: 768px) {
       .nav-links {
         flex-direction: column;
@@ -62,15 +84,16 @@
 <body>
 
   <header id="home">
+    <img src="https://raw.githubusercontent.com/Edgar1012/hanif-briyani/main/hb.png" class="bg" alt="Background Image" />
+    
     <nav class="navbar">
-      <img src="https://raw.githubusercontent.com/Edgar1012/hanif-briyani/main/hb.png" alt="Hanif Briyani Logo">
+      <img src="https://raw.githubusercontent.com/Edgar1012/hanif-briyani/main/hblogo.png" alt="Hanif Briyani Logo">
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact Us</a>
       </div>
     </nav>
-    <!-- Removed the title/slogan text block -->
   </header>
 
   <section id="about">
